@@ -1,0 +1,15 @@
+// Override the default settings
+
+[
+	// Remove default keymap for build
+	{ "keys": [], "command": "build" },
+
+	// Toggle sidebar
+	{ "keys": ["super+b"], "command": "toggle_side_bar" },
+
+	// Copy path of current file
+	{ "keys": ["alt+super+c"], "command": "copy_path" },
+
+	// Reveal current file in Finder
+	{ "keys": ["alt+super+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} }
+]
