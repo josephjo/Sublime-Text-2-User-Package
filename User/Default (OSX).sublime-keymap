@@ -11,5 +11,57 @@
 	{ "keys": ["alt+super+c"], "command": "copy_path" },
 
 	// Reveal current file in Finder
-	{ "keys": ["alt+super+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} }
+	{ "keys": ["alt+super+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+
+  // Add more space to the right column
+  {
+    "keys": ["ctrl+alt+left"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.3333, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+
+  // Add more space to the left column
+  {
+    "keys": ["ctrl+alt+right"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.6666, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+
+  // Get rid of three columns
+  {
+    "keys": ["super+alt+3"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.5, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+
+  // Get rid of four columns
+  {
+    "keys": ["super+alt+4"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 0.5, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1], [1, 0, 2, 1]]
+    }
+  },
+
+  // Move file from left to right with arrows
+  { "keys": ["ctrl+shift+left"], "command": "move_to_group", "args": { "group": 0 } },
+  { "keys": ["ctrl+shift+right"], "command": "move_to_group", "args": { "group": 1 } }
 ]
