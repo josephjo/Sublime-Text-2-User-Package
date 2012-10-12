@@ -1,17 +1,17 @@
 // Override the default settings
 
 [
-	// Remove default keymap for build
-	{ "keys": [], "command": "build" },
+  // Remove default keymap for build
+  { "keys": [], "command": "build" },
 
-	// Toggle sidebar
-	{ "keys": ["super+b"], "command": "toggle_side_bar" },
+  // Toggle sidebar
+  { "keys": ["super+b"], "command": "toggle_side_bar" },
 
-	// Copy path of current file
-	{ "keys": ["alt+super+c"], "command": "copy_path" },
+  // Copy path of current file
+  { "keys": ["alt+super+c"], "command": "copy_path" },
 
-	// Reveal current file in Finder
-	{ "keys": ["alt+super+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
+  // Reveal current file in Finder
+  { "keys": ["alt+super+o"], "command": "open_dir", "args": {"dir": "$file_path", "file": "$file_name"} },
 
   // Add more space to the right column
   {
@@ -63,5 +63,9 @@
 
   // Move file from left to right with arrows
   { "keys": ["ctrl+shift+left"], "command": "move_to_group", "args": { "group": 0 } },
-  { "keys": ["ctrl+shift+right"], "command": "move_to_group", "args": { "group": 1 } }
+  { "keys": ["ctrl+shift+right"], "command": "move_to_group", "args": { "group": 1 } },
+
+  // Remap paste to be paste and indent
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" }
 ]
